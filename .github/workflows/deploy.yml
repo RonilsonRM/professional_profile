@@ -1,6 +1,6 @@
 name: Deploy Next.js to GitHub Pages
 
-on:
+'on':
   push:
     branches: ["main"]
   workflow_dispatch:
@@ -24,13 +24,14 @@ jobs:
       - name: Configurar o Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "24"
           cache: "npm"
 
       - name: Configurar o GitHub Pages no Next.js
         uses: actions/configure-pages@v5
         with:
           static_site_generator: next
+          enablement: true
 
       - name: Instalar dependências
         run: npm ci
