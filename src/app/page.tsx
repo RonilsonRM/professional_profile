@@ -34,7 +34,7 @@ export default function Home() {
       {/* SEÇÃO HERO: PROPOSTA DE VALOR & BOTÕES DE AÇÃO */}
       <section id="sobre" className="pt-32 pb-20 px-6 max-w-5xl mx-auto flex flex-col items-center text-center mt-8">
         <div className="inline-block px-4 py-1.5 mb-6 text-xs font-semibold uppercase tracking-widest text-blue-400 bg-blue-950/80 border border-blue-800/50 rounded-full">
-          Consultoria & Gestão de Projetos (PMO)
+          Consultoria & Gestão de Projetos
         </div>
         
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight mb-6">
