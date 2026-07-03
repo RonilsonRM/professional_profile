@@ -21,10 +21,9 @@ export default function Home() {
           <span className="font-bold text-xl tracking-wider bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent">
             RONILSON R MARQUES
           </span>
-          <nav className="hidden md:flex gap-6 text-sm font-medium text-slate-300">
+          <nav className="flex gap-6 text-sm font-medium text-slate-300">
             <a href="#sobre" className="hover:text-blue-400 transition-colors">Sobre</a>
             <a href="#impacto" className="hover:text-blue-400 transition-colors">Impacto</a>
-            <a href="#formacao" className="hover:text-blue-400 transition-colors">Formação</a>
             <a href="#projetos" className="hover:text-blue-400 transition-colors">Projetos</a>
             <a href="#servicos" className="hover:text-blue-400 transition-colors">Serviços</a>
             <a href="#contato" className="text-blue-400 hover:text-blue-300 transition-colors font-semibold">Contato</a>
@@ -35,7 +34,7 @@ export default function Home() {
       {/* SEÇÃO HERO: PROPOSTA DE VALOR & BOTÕES DE AÇÃO */}
       <section id="sobre" className="pt-32 pb-20 px-6 max-w-5xl mx-auto flex flex-col items-center text-center mt-8">
         <div className="inline-block px-4 py-1.5 mb-6 text-xs font-semibold uppercase tracking-widest text-blue-400 bg-blue-950/80 border border-blue-800/50 rounded-full">
-          Consultoria & Gestão de Projetos 
+          Consultoria & Gestão de Projetos
         </div>
         
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight mb-6">
@@ -43,7 +42,7 @@ export default function Home() {
         </h1>
         
         <p className="text-lg md:text-xl text-slate-400 max-w-3xl mb-10 leading-relaxed">
-          Especialista em liderança de equipes e estruturação de projetos. Atuo tanto na consultoria diagnóstica quanto na coordenação de ponta a ponta para otimizar processos, reduzir custos e acelerar entregas.
+          Especialista em liderança de equipes e estruturação de Projetos. Atuo tanto na consultoria diagnóstica quanto na coordenação de ponta a ponta para otimizar processos, reduzir custos e acelerar entregas.
         </p>
 
         {/* BOTÕES DE AÇÃO (CTA) */}
@@ -87,79 +86,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* NOVA SEÇÃO: FORMAÇÃO ACADÊMICA & CERTIFICAÇÕES */}
-      <section id="formacao" className="py-24 px-6 max-w-6xl mx-auto w-full">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-blue-400 font-semibold text-sm tracking-widest uppercase block mb-2">Trajetória & Qualificação</span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Formação Acadêmica & Certificações</h2>
-          <p className="text-slate-400 leading-relaxed">
-            Base sólida que combina gestão estratégica de negócios, metodologias avançadas de projetos e especialização técnica contínua.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Card Formação Acadêmica */}
-          <div className="bg-slate-900/80 border border-slate-800 p-8 rounded-3xl relative flex flex-col justify-between hover:border-blue-500/50 transition-all shadow-lg">
-            <div>
-              <div className="w-12 h-12 bg-blue-500/10 border border-blue-500/20 rounded-2xl flex items-center justify-center text-blue-400 mb-6">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold mb-6 text-slate-100">Formação Acadêmica</h3>
-              
-              <div className="space-y-6">
-                <div className="border-l-2 border-blue-500/40 pl-4 py-1">
-                  <span className="text-xs font-semibold uppercase tracking-wider text-blue-400 block mb-1">Pós-Graduação / Especialização</span>
-                  <h4 className="text-lg font-bold text-slate-200">MBA em Gestão de Projetos</h4>
-                  <p className="text-sm text-slate-400">Fundação Getúlio Vargas (FGV) · <span className="text-slate-500">Conclusão: 03/2012</span></p>
-                </div>
-
-                <div className="border-l-2 border-slate-700 pl-4 py-1">
-                  <span className="text-xs font-semibold uppercase tracking-wider text-slate-400 block mb-1">Graduação Superior</span>
-                  <h4 className="text-lg font-bold text-slate-200">Administração de Empresas</h4>
-                  <p className="text-sm text-slate-400">Centro Universitário Newton Paiva · <span className="text-slate-500">Conclusão: 06/2009</span></p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Card Cursos e Certificações */}
-          <div className="bg-slate-900/80 border border-slate-800 p-8 rounded-3xl relative flex flex-col justify-between hover:border-indigo-500/50 transition-all shadow-lg">
-            <div>
-              <div className="w-12 h-12 bg-indigo-500/10 border border-indigo-500/20 rounded-2xl flex items-center justify-center text-indigo-400 mb-6">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold mb-6 text-slate-100">Cursos & Certificações</h3>
-
-              <div className="space-y-4">
-                <div className="bg-slate-950/50 p-4 rounded-xl border border-slate-800/80">
-                  <span className="text-xs font-bold text-indigo-400 uppercase block mb-0.5">Certificação Profissional</span>
-                  <h4 className="font-semibold text-slate-200 text-sm">HCT Associate - Metodologia de Projetos TOTVS</h4>
-                  <p className="text-xs text-slate-500 mt-1">Obtido em: 23/10/2025</p>
-                </div>
-
-                <div className="bg-slate-950/50 p-4 rounded-xl border border-slate-800/80">
-                  <span className="text-xs font-bold text-blue-400 uppercase block mb-0.5">Especialização Executiva</span>
-                  <h4 className="font-semibold text-slate-200 text-sm">Workshop de Customer Experience (8h)</h4>
-                  <p className="text-xs text-slate-500 mt-1">TOTVS · 2019</p>
-                </div>
-
-                <div className="bg-slate-950/50 p-4 rounded-xl border border-slate-800/80">
-                  <span className="text-xs font-bold text-emerald-400 uppercase block mb-0.5">Competências Técnicas</span>
-                  <p className="text-xs text-slate-300 leading-relaxed mt-1">
-                    Cursos complementares em <strong className="text-slate-200">Modelagem de Dados e SQL</strong>, Lógica de Programação, Algoritmos e Banco de Dados.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* PORTFÓLIO DE PROJETOS COM FILTRO */}
       <ProjectsSection initialProjects={allProjects} />
 
@@ -192,7 +118,7 @@ export default function Home() {
             </ul>
           </div>
 
-          {/* Serviço 2: Coordenação / PM */}
+          {/* Serviço 2: Coordenação / PMO */}
           <div className="bg-gradient-to-b from-blue-950/40 to-slate-900/90 border-2 border-blue-600/60 p-8 rounded-3xl relative flex flex-col justify-between shadow-2xl shadow-blue-900/20 group">
             <div className="absolute -top-3.5 right-6 bg-blue-600 text-white text-[10px] font-extrabold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
               Mais Solicitado
@@ -201,7 +127,7 @@ export default function Home() {
               <div className="w-12 h-12 bg-blue-500/20 border border-blue-400/30 rounded-2xl flex items-center justify-center text-blue-400 mb-6 group-hover:scale-110 transition-transform">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
               </div>
-              <h3 className="text-xl font-bold mb-3">Gestão de Ponta a Ponta (Projetos / Squads)</h3>
+              <h3 className="text-xl font-bold mb-3">Gestão de Ponta a Ponta (PMO / Squads)</h3>
               <p className="text-slate-300 text-sm leading-relaxed mb-6">
                 Assumo a liderança direta de projetos críticos, gerenciando escopo, cronograma, riscos, orçamento e integrando equipes multidisciplinares até a entrega final.
               </p>
@@ -226,7 +152,7 @@ export default function Home() {
             </div>
             <ul className="text-xs text-slate-300 space-y-2.5 pt-6 border-t border-slate-800/80">
               <li className="flex items-center gap-2"><span className="text-indigo-400 font-bold">✓</span> Capacitação em Métodos Ágeis e PMBOK</li>
-              <li className="flex items-center gap-2"><span className="text-indigo-400 font-bold">✓</span> Estruturação de Governança de Projetos</li>
+              <li className="flex items-center gap-2"><span className="text-indigo-400 font-bold">✓</span> Estruturação de Governança de PMO</li>
               <li className="flex items-center gap-2"><span className="text-indigo-400 font-bold">✓</span> Reuniões Periódicas de Acompanhamento</li>
             </ul>
           </div>
@@ -236,6 +162,7 @@ export default function Home() {
       {/* NOVA SEÇÃO DE CONTATO DE ALTA CONVERSÃO */}
       <section id="contato" className="py-24 px-6 bg-gradient-to-b from-slate-900 to-slate-950 border-t border-slate-800">
         <div className="max-w-4xl mx-auto bg-slate-900/90 border border-slate-800 rounded-3xl p-8 md:p-14 text-center shadow-2xl relative overflow-hidden">
+          {/* Efeito visual de brilho no fundo */}
           <div className="absolute -top-24 -right-24 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
           
           <span className="text-blue-400 font-semibold text-sm tracking-widest uppercase block mb-3">Conexão Direta</span>
@@ -248,6 +175,7 @@ export default function Home() {
 
           {/* BOTÕES DE CONTATO DIRETO */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto mb-12">
+            {/* Botão WhatsApp */}
             <a
               href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
               target="_blank"
@@ -260,6 +188,7 @@ export default function Home() {
               WhatsApp Business
             </a>
 
+            {/* Botão Agendamento (Calendly / Google Booking) */}
             <a
               href={calendlyUrl}
               target="_blank"
@@ -273,6 +202,7 @@ export default function Home() {
             </a>
           </div>
 
+          {/* Opções alternativas secundárias */}
           <div className="pt-8 border-t border-slate-800 flex flex-wrap justify-center gap-6 text-sm text-slate-400">
             <span className="flex items-center gap-2">
               ✉️ E-mail direto: <a href={`mailto:${emailProfissional}`} className="text-slate-200 hover:text-blue-400 font-medium transition-colors">{emailProfissional}</a>
