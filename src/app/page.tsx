@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { getSortedProjectsData } from '@/lib/projects';
 import ProjectsSection from '@/components/ProjectsSection';
@@ -132,28 +133,25 @@ export default function Home() {
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                 </svg>
-              </div>
               <h3 className="text-2xl font-bold mb-6 text-slate-100">Cursos & Certificações</h3>
-
-              <div className="bg-slate-950/50 p-4 rounded-xl border border-slate-800/80">
-                <span className="text-xs font-bold text-indigo-400 uppercase block mb-0.5">
-                    Certificação Profissional
-                </span>
-
-                <a
-                    href="https://www.brasilopenbadge.com.br/pages/badge/9d981c5da262275d0ba62aaf60c7e7b5"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-semibold text-slate-200 text-sm hover:text-indigo-400 transition-colors"
-                >
-                    HCT Associate - Metodologia de Projetos TOTVS
-                </a>
-
-                <p className="text-xs text-slate-500 mt-1">
-                    Obtido em: 23/10/2025
-                </p>
+              <div className="space-y-4">
+                {/* Certificação com Imagem */}
+                <div className="bg-slate-950/50 p-4 rounded-xl border border-slate-800/80 flex items-center gap-4">
+                  <div className="relative w-16 h-16 flex-shrink-0">
+                    <Image 
+                      src="/certificacao-totvs.png" 
+                      alt="Certificação HCT Associate TOTVS" 
+                      fill 
+                      className="object-contain"
+                    />
+                  </div>
+                  <div>
+                    <span className="text-xs font-bold text-indigo-400 uppercase block mb-0.5">Certificação Profissional</span>
+                    <h4 className="font-semibold text-slate-200 text-sm">HCT Associate - Metodologia de Projetos TOTVS</h4>
+                    <p className="text-xs text-slate-500 mt-1">Obtido em: 23/10/2025</p>
+                  </div>
                 </div>
-
+                {/* Demais itens permanecem iguais */}
                 <div className="bg-slate-950/50 p-4 rounded-xl border border-slate-800/80">
                   <span className="text-xs font-bold text-blue-400 uppercase block mb-0.5">Especialização Executiva</span>
                   <h4 className="font-semibold text-slate-200 text-sm">Workshop de Customer Experience (8h)</h4>
@@ -166,6 +164,7 @@ export default function Home() {
                     Cursos complementares em <strong className="text-slate-200">Modelagem de Dados e SQL</strong>, Lógica de Programação, Algoritmos e Banco de Dados.
                   </p>
                 </div>
+              </div>
               </div>
             </div>
           </div>
