@@ -135,11 +135,23 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold mb-6 text-slate-100">Cursos & Certificações</h3>
 
-              <div className="space-y-4">
-                <div className="bg-slate-950/50 p-4 rounded-xl border border-slate-800/80">
-                  <span className="text-xs font-bold text-indigo-400 uppercase block mb-0.5">Certificação Profissional</span>
-                  <h4 className="font-semibold text-slate-200 text-sm">HCT Associate - Metodologia de Projetos TOTVS</h4>
-                  <p className="text-xs text-slate-500 mt-1">Obtido em: 23/10/2025</p>
+              <div className="bg-slate-950/50 p-4 rounded-xl border border-slate-800/80">
+                <span className="text-xs font-bold text-indigo-400 uppercase block mb-0.5">
+                    Certificação Profissional
+                </span>
+
+                <a
+                    href="https://www.brasilopenbadge.com.br/pages/badge/9d981c5da262275d0ba62aaf60c7e7b5"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-slate-200 text-sm hover:text-indigo-400 transition-colors"
+                >
+                    HCT Associate - Metodologia de Projetos TOTVS
+                </a>
+
+                <p className="text-xs text-slate-500 mt-1">
+                    Obtido em: 23/10/2025
+                </p>
                 </div>
 
                 <div className="bg-slate-950/50 p-4 rounded-xl border border-slate-800/80">
