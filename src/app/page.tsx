@@ -12,7 +12,7 @@ export default function Home() {
       <header className="border-b border-slate-800 bg-slate-900/50 backdrop-blur fixed top-0 w-full z-10">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <span className="font-bold text-xl tracking-wider bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent">
-            RONILSON.PRO
+            RONILSON R MARQUES
           </span>
           <nav className="flex gap-6 text-sm font-medium text-slate-300">
             <a href="#sobre" className="hover:text-blue-400 transition-colors">Sobre</a>
