@@ -1,6 +1,11 @@
 import Link from 'next/link';
+import { getSortedProjectsData } from '@/lib/projects';
+import ProjectsSection from '@/components/ProjectsSection';
 
 export default function Home() {
+  // Lê os projetos da pasta /content/projects do lado do servidor
+  const allProjects = getSortedProjectsData();
+
   return (
     <main className="min-h-screen bg-slate-900 text-slate-100 flex flex-col justify-between">
       {/* CABEÇALHO / NAVEGAÇÃO RÁPIDA */}
@@ -12,6 +17,7 @@ export default function Home() {
           <nav className="flex gap-6 text-sm font-medium text-slate-300">
             <a href="#sobre" className="hover:text-blue-400 transition-colors">Sobre</a>
             <a href="#impacto" className="hover:text-blue-400 transition-colors">Impacto</a>
+            <a href="#projetos" className="hover:text-blue-400 transition-colors">Projetos</a>
             <a href="#atuacao" className="hover:text-blue-400 transition-colors">Serviços</a>
           </nav>
         </div>
@@ -33,7 +39,6 @@ export default function Home() {
 
         {/* BOTÕES DE AÇÃO (CTA) */}
         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
-          {/* Botão de Download do Currículo */}
           <a
             href="/professional_profile/assets/cv-profissional.pdf"
             target="_blank"
@@ -46,12 +51,11 @@ export default function Home() {
             Baixar Currículo (PDF)
           </a>
 
-          {/* Botão para Área de Contato */}
           <a
-            href="#atuacao"
+            href="#projetos"
             className="flex items-center justify-center bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold px-8 py-4 rounded-xl transition-all"
           >
-            Contratar Serviços
+            Ver Portfólio de Projetos
           </a>
         </div>
       </section>
@@ -74,15 +78,17 @@ export default function Home() {
         </div>
       </section>
 
+      {/* NOVA SEÇÃO: PORTFÓLIO DE PROJETOS COM FILTRO */}
+      <ProjectsSection initialProjects={allProjects} />
+
       {/* SEÇÃO DE RESUMO DE ATUAÇÃO / SERVIÇOS */}
-      <section id="atuacao" className="py-24 px-6 max-w-6xl mx-auto w-full">
+      <section id="atuacao" className="py-24 px-6 max-w-6xl mx-auto w-full border-t border-slate-800">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl font-bold mb-4">Como Posso Ajudar Sua Empresa</h2>
           <p className="text-slate-400">Flexibilidade de atuação adaptada ao momento e à necessidade do seu negócio ou projeto estratégico.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Card Consultoria */}
           <div className="bg-gradient-to-b from-slate-800/60 to-slate-900/90 border border-slate-800 p-8 rounded-3xl relative overflow-hidden flex flex-col justify-between hover:border-slate-700 transition-all">
             <div>
               <div className="w-12 h-12 bg-blue-500/10 border border-blue-500/20 rounded-2xl flex items-center justify-center text-blue-400 mb-6">
@@ -100,7 +106,6 @@ export default function Home() {
             </ul>
           </div>
 
-          {/* Card Coordenação */}
           <div className="bg-gradient-to-b from-slate-800/60 to-slate-900/90 border border-slate-800 p-8 rounded-3xl relative overflow-hidden flex flex-col justify-between hover:border-slate-700 transition-all">
             <div>
               <div className="w-12 h-12 bg-indigo-500/10 border border-indigo-500/20 rounded-2xl flex items-center justify-center text-indigo-400 mb-6">
