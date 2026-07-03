@@ -2,7 +2,7 @@ title: "Segregação do sistema ERP RM"
 role_type: "coordenador" 
 client_industry: "comércio varejista farmacêutico"
 period: "2017 - 2018"
-summary: "Coordenação e facilitação no desenvolvimento de segregação do ERP RM, utilizaçaõ de metodologias ágeil, com equipe de 5 pessoas com foco em otimização operacional da folha e registro de ponto de 7200 funcionarios com ganho de produtividade reduzindo o processamento da folha de 12 horas para 3 horas."
+summary: "Coordenação do desenvolvimento de segregação do ERP RM, aplicando metodologia hibrida, com equipe de 5 pessoas com foco em otimização operacional e ganho de produtividade reduzindo o processamento da folha de 12 horas para 3 horas."
 featured: true
 ---
 
