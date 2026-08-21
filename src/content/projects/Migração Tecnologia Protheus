@@ -1,0 +1,22 @@
+---
+title: "Evolução de Tecnologia do sistema ERP Protheus"
+role_type: "coordenador" 
+client_industry: "Agremiação desportiva e social"
+period: "2024"
+summary: "Coordenação do projeto de migração do SGBD e adequação das customizações, aplicando metodologia hibrida, com equipes de infra e fabrica de softwares eliminando risco de parada das operações."
+featured: true
+---
+
+### Situação
+Migração e atualização do Sistema de Gerenciamento de banco de dados do ERP Protheus por descontinuidade da tecnologia DB2 migrando para SQL Server e adequação dos objetos customizados.
+
+### Tarefa
+A coordenação do projeto, apoio o time do cliente no mapeamento das customizações e na estratégia para a migração e reestruturar as integrações sem qualquer tipo de intermitencia das atividades operacionais.
+
+### Ação
+* **Utilização de metodologia hibrida:** Adoção de modelos híbridos (Scrum para o desenvolvimento das funcionalidades e Kanban para sustentação e suporte).
+* **Treinamento e Mentoria:** Realização de workshops de alinhamento, capacitação e mentoria para o time de infra de TI.
+* **Integração de Sistemas:** Validação das integração das ferramentas de gestão de negocio (ERP RM Protheus) em ambientes de homologação e produção otimizando peformance.
+
+### Resultado
+* **Migração tecnologica e adequação ao padrão TOTVS do ambiente Protheus ERP e Portais**.
