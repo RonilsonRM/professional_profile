@@ -25,6 +25,7 @@ export default function Home() {
             <a href="#sobre" className="hover:text-blue-400 transition-colors">Sobre</a>
             <a href="#impacto" className="hover:text-blue-400 transition-colors">Impacto</a>
             <a href="#formacao" className="hover:text-blue-400 transition-colors">Formação</a>
+            <a href="#trajetoria" className="hover:text-blue-400 transition-colors">Trajetória</a> {/* NOVO LINK */}
             <a href="#projetos" className="hover:text-blue-400 transition-colors">Projetos</a>
             <a href="#servicos" className="hover:text-blue-400 transition-colors">Serviços</a>
             <a href="#contato" className="text-blue-400 hover:text-blue-300 transition-colors font-semibold">Contato</a>
@@ -160,6 +161,92 @@ export default function Home() {
         </div>
       </section>
 
+{/* LINHA DO TEMPO / TRAJETÓRIA PROFISSIONAL */}
+<section id="trajetoria" className="py-24 px-6 max-w-5xl mx-auto w-full border-t border-slate-800">
+  <div className="text-center max-w-3xl mx-auto mb-16">
+    <span className="text-blue-400 font-semibold text-sm tracking-widest uppercase block mb-2">Experiência</span>
+    <h2 className="text-3xl md:text-4xl font-bold mb-4">Trajetória Profissional</h2>
+    <p className="text-slate-400 leading-relaxed">
+      Mais de duas décadas de evolução liderando tecnologia, otimizando processos e implementando soluções ERP.
+    </p>
+  </div>
+
+  <div className="max-w-3xl mx-auto">
+    {/* Contêiner da linha vertical */}
+    <div className="relative border-l-2 border-slate-700/50 ml-3 md:ml-4 space-y-12">
+
+      {/* Experiência 1 */}
+      <div className="relative pl-8 md:pl-10 group">
+        <div className="absolute -left-[9px] top-1.5 w-4 h-4 bg-blue-500 rounded-full border-4 border-slate-900 group-hover:scale-125 transition-transform"></div>
+        <span className="text-blue-400 text-xs font-bold tracking-widest uppercase mb-1 block">Ago 2016 - Mai 2026 · 9 anos e 10 meses</span>
+        <h3 className="text-xl font-bold text-slate-100">Coordenador de Projetos</h3>
+        <h4 className="text-sm font-medium text-slate-400 mb-3">TOTVS · Belo Horizonte, MG</h4>
+        <p className="text-sm text-slate-300 leading-relaxed mb-4">
+          Coordenação de projetos de implantação e projetos de sustentação de ERP junto aos clientes TOTVS.
+        </p>
+        <div className="flex flex-wrap gap-2">
+          <span className="bg-slate-800/80 border border-slate-700 text-slate-300 text-xs px-2.5 py-1 rounded-md">Trabalho em equipe</span>
+          <span className="bg-slate-800/80 border border-slate-700 text-slate-300 text-xs px-2.5 py-1 rounded-md">Comunicação</span>
+          <span className="bg-slate-800/80 border border-slate-700 text-slate-300 text-xs px-2.5 py-1 rounded-md">Gestão de Projetos</span>
+        </div>
+      </div>
+
+      {/* Experiência 2 */}
+      <div className="relative pl-8 md:pl-10 group">
+        <div className="absolute -left-[9px] top-1.5 w-4 h-4 bg-slate-500 rounded-full border-4 border-slate-900 group-hover:bg-blue-400 group-hover:scale-125 transition-all"></div>
+        <span className="text-slate-400 group-hover:text-blue-400 transition-colors text-xs font-bold tracking-widest uppercase mb-1 block">Fev 2015 - Mai 2016 · 1 ano e 4 meses</span>
+        <h3 className="text-xl font-bold text-slate-100">Administrador de Sistemas</h3>
+        <h4 className="text-sm font-medium text-slate-400 mb-3">Comercial Cometa Industria e Comércio Ltda · Belo Horizonte, MG</h4>
+        <p className="text-sm text-slate-300 leading-relaxed mb-4">
+          Responsável por toda área de tecnologia da empresa, constatação de necessidades de contratação, gestão de serviços e ativos tecnológicos da empresa e suporte à tomada de decisões estratégicas.
+        </p>
+        <div className="flex flex-wrap gap-2">
+          <span className="bg-slate-800/80 border border-slate-700 text-slate-300 text-xs px-2.5 py-1 rounded-md">Trabalho em equipe</span>
+          <span className="bg-slate-800/80 border border-slate-700 text-slate-300 text-xs px-2.5 py-1 rounded-md">Comunicação</span>
+          <span className="bg-slate-800/80 border border-slate-700 text-slate-300 text-xs px-2.5 py-1 rounded-md">Infraestrutura</span>
+        </div>
+      </div>
+
+      {/* Experiência 3 */}
+      <div className="relative pl-8 md:pl-10 group">
+        <div className="absolute -left-[9px] top-1.5 w-4 h-4 bg-slate-500 rounded-full border-4 border-slate-900 group-hover:bg-blue-400 group-hover:scale-125 transition-all"></div>
+        <span className="text-slate-400 group-hover:text-blue-400 transition-colors text-xs font-bold tracking-widest uppercase mb-1 block">Mar 2013 - Out 2014 · 1 ano e 8 meses</span>
+        <h3 className="text-xl font-bold text-slate-100">Project Coordinator</h3>
+        <h4 className="text-sm font-medium text-slate-400 mb-3">Mobyra Incorporações SA</h4>
+        <div className="text-sm text-slate-300 leading-relaxed mb-4 space-y-1">
+          <p>• Coordenador de ERP TOTVS.</p>
+          <p>• Apoio na estruturação da área de Projetos.</p>
+        </div>
+        <div className="flex flex-wrap gap-2">
+          <span className="bg-slate-800/80 border border-slate-700 text-slate-300 text-xs px-2.5 py-1 rounded-md">Trabalho em equipe</span>
+          <span className="bg-slate-800/80 border border-slate-700 text-slate-300 text-xs px-2.5 py-1 rounded-md">Comunicação</span>
+          <span className="bg-slate-800/80 border border-slate-700 text-slate-300 text-xs px-2.5 py-1 rounded-md">Implantação ERP</span>
+        </div>
+      </div>
+
+      {/* Experiência 4 */}
+      <div className="relative pl-8 md:pl-10 group">
+        <div className="absolute -left-[9px] top-1.5 w-4 h-4 bg-slate-500 rounded-full border-4 border-slate-900 group-hover:bg-blue-400 group-hover:scale-125 transition-all"></div>
+        <span className="text-slate-400 group-hover:text-blue-400 transition-colors text-xs font-bold tracking-widest uppercase mb-1 block">Out 2001 - Mar 2013 · 11 anos e 6 meses</span>
+        <h3 className="text-xl font-bold text-slate-100">Analista de Negócios III</h3>
+        <h4 className="text-sm font-medium text-slate-400 mb-3">TOTVS · Belo Horizonte e Região</h4>
+        <div className="text-sm text-slate-300 leading-relaxed mb-4 space-y-2">
+          <p>• Levantamento de requisitos, implementação e documentação de processos administrativos financeiros, contábeis e fiscais do backoffice TOTVS CorporeRM.</p>
+          <p>• Capacitação de key-users nos processos supracitados.</p>
+          <p>• Auxílio no desenvolvimento de rotinas customizadas.</p>
+          <p>• Implantação da plataforma web do TOTVS CorporeRM Portal.</p>
+        </div>
+        <div className="flex flex-wrap gap-2">
+          <span className="bg-slate-800/80 border border-slate-700 text-slate-300 text-xs px-2.5 py-1 rounded-md">Regras de Negócio</span>
+          <span className="bg-slate-800/80 border border-slate-700 text-slate-300 text-xs px-2.5 py-1 rounded-md">TOTVS CorporeRM</span>
+          <span className="bg-slate-800/80 border border-slate-700 text-slate-300 text-xs px-2.5 py-1 rounded-md">Treinamento</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+      
       {/* PORTFÓLIO DE PROJETOS COM FILTRO */}
       <ProjectsSection initialProjects={allProjects} />
 
